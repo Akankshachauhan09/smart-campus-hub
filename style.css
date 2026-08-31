@@ -1,0 +1,1100 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    letter-spacing: 0.3px;
+}
+
+.navbar-brand i {
+    margin-right: 7px;
+}
+
+.nav-link {
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #60a5fa !important;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #ffffff
+    );
+}
+
+.hero-section h1 {
+    font-size: 55px;
+    line-height: 1.15;
+}
+
+.hero-section p {
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+.hero-section .btn {
+    padding: 12px 22px;
+}
+
+
+/* ================= HERO ICON ================= */
+
+.hero-icon {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #2563eb;
+
+    font-size: 130px;
+
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.15);
+}
+
+
+/* ================= STATS ================= */
+
+.stat-card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.stat-card h2 {
+    font-weight: 700;
+}
+
+.stat-card i {
+    transition: 0.3s;
+}
+
+.stat-card:hover i {
+    transform: scale(1.15);
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 40px;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+
+/* ================= SERVICE CARDS ================= */
+
+.service-card {
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+}
+
+.service-card .card-body {
+    padding: 35px;
+}
+
+.service-card i {
+    transition: 0.3s;
+}
+
+.service-card:hover i {
+    transform: scale(1.15);
+}
+
+.service-card h4 {
+    font-weight: 700;
+}
+
+.service-card p {
+    line-height: 1.7;
+}
+
+
+/* ================= NOTICE CARDS ================= */
+
+.notice-card {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.notice-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.notice-card h5 {
+    line-height: 1.5;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.btn {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    margin-top: 30px;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff !important;
+    padding-left: 5px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .hero-section {
+        text-align: center;
+        padding: 80px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 45px;
+    }
+
+    .hero-section p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-icon {
+        width: 250px;
+        height: 250px;
+        font-size: 100px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .hero-section h1 {
+        font-size: 35px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .hero-section .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero-icon {
+        width: 200px;
+        height: 200px;
+        font-size: 80px;
+    }
+
+}
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #f8fbff, #eaf4ff);
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+}
+
+/* Campus Image */
+.campus-image-box {
+    position: relative;
+    padding: 15px;
+}
+
+.campus-image {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 80, 180, 0.18);
+}
+
+/* Floating Card */
+.campus-info {
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.campus-info i {
+    font-size: 45px;
+    color: #0d6efd;
+}
+
+.campus-info h4 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.campus-info p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+    min-height: 90vh;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #f8fbff,
+        #eef5ff,
+        #ffffff
+    );
+}
+
+
+/* Hero Heading */
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+
+/* Hero Paragraph */
+
+.hero-section p {
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+
+/* Buttons */
+
+.hero-section .btn {
+    border-radius: 30px;
+    padding: 12px 24px;
+    transition: 0.3s;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ================= CAMPUS IMAGE ================= */
+
+.campus-image-box {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+    background: white;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.campus-image-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.2);
+}
+
+
+.campus-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+
+/* Image Information */
+
+.campus-info {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    right: 25px;
+    background: rgba(255, 255, 255, 0.94);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.campus-info i {
+    color: #0d6efd;
+    font-size: 25px;
+}
+
+.campus-info h4 {
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.campus-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* ================= CARDS ================= */
+
+.card {
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .nav-link {
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #0d6efd !important;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding-top: 120px;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-section .btn {
+        margin-bottom: 10px;
+    }
+
+    .campus-image {
+        height: 300px;
+    }
+
+}
+body {
+            background: #f5f7fb;
+        }
+
+        .note-card {
+            border: none;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        pre {
+            background: #212529;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+        code {
+            color: #d63384;
+        }
+
+        .topic-title {
+            color: #0d6efd;
+            font-weight: bold;
+        }
+        /* ================= GENERAL ================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f7f9fc;
+    color: #172033;
+    font-family: Arial, sans-serif;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.custom-navbar {
+    background: rgba(7, 25, 52, 0.97);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 5px 25px rgba(0,0,0,.15);
+}
+
+.navbar-brand {
+    font-size: 21px;
+}
+
+.navbar-brand i {
+    color: #00d4ff;
+    font-size: 25px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 7px;
+    transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00d4ff !important;
+}
+
+.theme-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,.4);
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.theme-btn:hover {
+    background: #00d4ff;
+    color: #071934;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 680px;
+    margin-top: 56px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4,18,40,.94),
+            rgba(4,18,40,.65),
+            rgba(4,18,40,.20)
+        ),
+        url("image1.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    color: white;
+    padding: 70px 0;
+}
+
+.welcome-badge {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 50px;
+
+    color: #63e6ff;
+
+    border: 1px solid rgba(0,212,255,.5);
+
+    background: rgba(0,212,255,.12);
+
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 800;
+    line-height: 1.05;
+    margin-top: 20px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #00d4ff;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #dce8f5;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 25px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn-main {
+    background: #00d4ff;
+    color: #06203b;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn-main:hover {
+    background: white;
+    color: #06203b;
+    transform: translateY(-3px);
+}
+
+.btn-hero-outline {
+    color: white;
+    border: 1px solid white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    margin-left: 8px;
+}
+
+.btn-hero-outline:hover {
+    background: white;
+    color: #06203b;
+}
+
+
+/* ================= NOTICE PANEL ================= */
+
+.notice-panel {
+    background: rgba(255,255,255,.97);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+
+.notice-panel h4 {
+    font-weight: 800;
+}
+
+.notice-panel a {
+    text-decoration: none;
+}
+
+.notice-item {
+    padding: 15px;
+    margin-top: 12px;
+
+    background: #f6f9fd;
+
+    border-left: 4px solid #00d4ff;
+
+    border-radius: 12px;
+}
+
+.notice-item strong {
+    display: block;
+    margin-top: 8px;
+}
+
+.notice-item small {
+    display: block;
+    color: #6c757d;
+    margin-top: 4px;
+}
+
+
+/* ================= STATS ================= */
+
+.stats-section {
+    margin-top: -45px;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 50px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(25,50,80,.10);
+    transition: .3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-7px);
+}
+
+.stat-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #eafaff;
+    color: #009fc8;
+
+    font-size: 25px;
+}
+
+.stat-card h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.stat-card p {
+    color: #6c757d;
+    margin: 0;
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    color: #009fc8;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+.section-title p {
+    color: #6c757d;
+}
+
+
+/* ================= QUICK CARDS ================= */
+
+.quick-card {
+    display: block;
+
+    text-decoration: none;
+    text-align: center;
+
+    background: white;
+
+    padding: 30px 15px;
+
+    border-radius: 18px;
+
+    color: #172033;
+
+    border: 1px solid #edf0f5;
+
+    transition: .35s;
+}
+
+.quick-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.10);
+    color: #009fc8;
+}
+
+.quick-card i {
+    display: block;
+
+    color: #009fc8;
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.quick-card h6 {
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services-section {
+    background: #f0f5fa;
+}
+
+.feature-card {
+    background: white;
+
+    padding: 30px;
+
+    height: 100%;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(25,50,80,.08);
+
+    transition: .35s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(25,50,80,.14);
+}
+
+.feature-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eafaff;
+
+    color: #009fc8;
+
+    border-radius: 17px;
+
+    font-size: 30px;
+}
+
+.feature-card h4 {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+
+/* ================= UPDATE CARDS ================= */
+
+.update-card {
+    background: white;
+
+    padding: 25px;
+
+    height: 100%;
+
+    border-radius: 17px;
+
+    box-shadow: 0 8px 25px rgba(25,50,80,.07);
+
+    transition: .3s;
+}
+
+.update-card:hover {
+    transform: translateY(-5px);
+}
+
+.update-card > span {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background: #e9faff;
+
+    color: #009fc8;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.update-card h5 {
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+.update-card p {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+.update-card a {
+    color: #009fc8;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* ================= CAMPUS BOX ================= */
+
+.campus-box {
+    background: linear-gradient(
+        135deg,
+        #071934,
+        #103b65
+    );
+
+    color: white;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.campus-box h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.campus-box p {
+    color: #d8e5f2;
+    line-height: 1.7;
+}
+
+.campus-label {
+    color: #00d4ff;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.info-line {
+    margin-top: 15px;
+}
+
+.info-line i {
+    color: #00d4ff;
+    margin-right: 8px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #061426;
+    color: white;
+    padding: 55px 0 25px;
+}
+
+footer h5 {
+    font-weight: 700;
+}
+
+footer h6 {
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+footer p {
+    color: #9eafc1;
+    line-height: 1.7;
+}
+
+footer a {
+    display: block;
+
+    color: #9eafc1;
+
+    text-decoration: none;
+
+    margin-bottom: 10px;
+
+    transition: .3s;
+}
+
+footer a:hover {
+    color: #00d4ff;
+}
+
+footer hr {
+    border-color: #304258;
+    margin-top: 30px;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+/* ================= DARK MODE ================= */
+
+body.dark-mode {
+    background: #0c1727;
+    color: #e8f0f7;
+}
+
+body.dark-mode .stat-card,
+body.dark-mode .quick-card,
+body.dark-mode .feature-card,
+body.dark-mode .update-card {
+    background: #142238;
+    color: #e8f0f7;
+    border-color: #263953;
+}
+
+body.dark-mode .services-section {
+    background: #101d30;
+}
+
+body.dark-mode .stat-card p,
+body.dark-mode .feature-card p,
+body.dark-mode .update-card p,
+body.dark-mode .section-title p {
+    color: #aebdce;
+}
+
+body.dark-mode .notice-panel {
+    background: #142238;
+    color: white;
+}
+
+body.dark-mode .notice-item {
+    background: #1c2d45;
+}
+
+body.dark-mode .quick-card:hover {
+    color: #00d4ff;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 80px 0 40px;
+    }
+
+    .notice-panel {
+        margin-bottom: 50px;
+    }
+
+    .stats-section {
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn-hero-outline {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .campus-box {
+        padding: 30px 22px;
+    }
+
+    .campus-box h2 {
+        font-size: 30px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+}

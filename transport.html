@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transport | Smart Campus Hub</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+
+            <i class="bi bi-mortarboard-fill"></i>
+
+            Smart Campus Hub
+
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="notices.html">
+                        Notices
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">
+                        Events
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.html">
+                        Resources
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="transport.html">
+                        Transport
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="canteen.html">
+                        Canteen
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= HEADER ================= -->
+
+<section class="bg-light py-5">
+
+    <div class="container text-center">
+
+        <i class="bi bi-bus-front-fill text-primary"
+           style="font-size:65px;">
+        </i>
+
+        <h1 class="fw-bold mt-3">
+            Campus Transport
+        </h1>
+
+        <p class="text-secondary">
+            Find bus routes, timings and important stops.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="py-4">
+
+    <div class="container">
+
+        <div class="input-group">
+
+            <span class="input-group-text">
+                <i class="bi bi-search"></i>
+            </span>
+
+            <input
+                type="text"
+                id="routeSearch"
+                class="form-control"
+                placeholder="Search bus route or stop...">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BUS ROUTES ================= -->
+
+<section class="pb-5">
+
+    <div class="container">
+
+
+        <div class="text-center mb-5">
+
+            <span class="text-primary fw-bold">
+                BUS SERVICES
+            </span>
+
+            <h2 class="fw-bold mt-2">
+                Available Routes
+            </h2>
+
+            <p class="text-secondary">
+                Select your route and check the complete details.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4" id="routeContainer">
+
+
+
+           <!-- ROUTE 1 -->
+
+<div class="col-md-6 route-item">
+
+    <div class="card border-0 shadow-sm h-100">
+
+        <div class="card-body p-4">
+
+            <div class="d-flex justify-content-between">
+
+                <h4 class="fw-bold">
+                    Route 01
+                </h4>
+
+                <span class="badge bg-success">
+                    Active
+                </span>
+
+            </div>
+
+            <p class="text-primary fw-bold mt-3">
+                <i class="bi bi-geo-alt-fill"></i>
+                Azamgarh → SSPI College
+            </p>
+
+            <hr>
+
+            <p>
+                <i class="bi bi-clock text-primary"></i>
+                <strong>Departure:</strong>
+                7:00 AM
+            </p>
+
+            <p>
+                <i class="bi bi-clock text-primary"></i>
+                <strong>Return:</strong>
+                4:30 PM
+            </p>
+
+            <h6 class="fw-bold mt-4">
+                Major Stops
+            </h6>
+
+            <div class="d-flex flex-wrap gap-2">
+
+                <span class="badge bg-light text-dark">
+                    Azamgarh
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    Sagri
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    Patwadh Kautuk
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    SSPI College
+                </span>
+
+            </div>
+
+            <button
+                class="btn btn-outline-primary w-100 mt-4"
+                onclick="showRoute('Route 01')">
+
+                <i class="bi bi-map"></i>
+                View Route
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+            <!-- ROUTE 2 -->
+
+            <!-- ROUTE 2 -->
+
+<div class="col-md-6 route-item">
+
+    <div class="card border-0 shadow-sm h-100">
+
+        <div class="card-body p-4">
+
+            <div class="d-flex justify-content-between">
+
+                <h4 class="fw-bold">
+                    Route 02
+                </h4>
+
+                <span class="badge bg-success">
+                    Active
+                </span>
+
+            </div>
+
+            <p class="text-primary fw-bold mt-3">
+                <i class="bi bi-geo-alt-fill"></i>
+                Sagri → SSPI College
+            </p>
+
+            <hr>
+
+            <p>
+                <i class="bi bi-clock text-primary"></i>
+                <strong>Departure:</strong>
+                7:30 AM
+            </p>
+
+            <p>
+                <i class="bi bi-clock text-primary"></i>
+                <strong>Return:</strong>
+                5:00 PM
+            </p>
+
+            <h6 class="fw-bold mt-4">
+                Major Stops
+            </h6>
+
+            <div class="d-flex flex-wrap gap-2">
+
+                <span class="badge bg-light text-dark">
+                    Sagri
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    Bilariya
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    Patwadh
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    SSPI College
+                </span>
+
+            </div>
+
+            <button
+                class="btn btn-outline-primary w-100 mt-4"
+                onclick="showRoute('Route 02')">
+
+                <i class="bi bi-map"></i>
+                View Route
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- ROUTE 3 -->
+              
+            <!-- ROUTE 3 -->
+
+<div class="col-md-6 route-item">
+
+    <div class="card border-0 shadow-sm h-100">
+
+        <div class="card-body p-4">
+
+            <div class="d-flex justify-content-between">
+
+                <h4 class="fw-bold">
+                    Route 03
+                </h4>
+
+                <span class="badge bg-success">
+                    Active
+                </span>
+
+            </div>
+
+            <p class="text-primary fw-bold mt-3">
+                <i class="bi bi-geo-alt-fill"></i>
+                Bilariya → SSPI College
+            </p>
+
+            <hr>
+
+            <p>
+                <i class="bi bi-clock text-primary"></i>
+                <strong>Departure:</strong>
+                7:45 AM
+            </p>
+
+            <p>
+                <i class="bi bi-clock text-primary"></i>
+                <strong>Return:</strong>
+                4:45 PM
+            </p>
+
+            <h6 class="fw-bold mt-4">
+                Major Stops
+            </h6>
+
+            <div class="d-flex flex-wrap gap-2">
+
+                <span class="badge bg-light text-dark">
+                    Bilariya
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    Local Market
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    Patwadh Kautuk
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    SSPI College
+                </span>
+
+            </div>
+
+            <button
+                class="btn btn-outline-primary w-100 mt-4"
+                onclick="showRoute('Route 03')">
+
+                <i class="bi bi-map"></i>
+                View Route
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+            <!-- ROUTE 4 -->
+
+            <!-- ROUTE 4 -->
+
+<div class="col-md-6 route-item">
+
+    <div class="card border-0 shadow-sm h-100">
+
+        <div class="card-body p-4">
+
+            <div class="d-flex justify-content-between">
+
+                <h4 class="fw-bold">
+                    Route 04
+                </h4>
+
+                <span class="badge bg-warning text-dark">
+                    Limited
+                </span>
+
+            </div>
+
+            <p class="text-primary fw-bold mt-3">
+                <i class="bi bi-geo-alt-fill"></i>
+                Patwadh Kautuk → SSPI College
+            </p>
+
+            <hr>
+
+            <p>
+                <i class="bi bi-clock text-primary"></i>
+                <strong>Departure:</strong>
+                8:15 AM
+            </p>
+
+            <p>
+                <i class="bi bi-clock text-primary"></i>
+                <strong>Return:</strong>
+                4:15 PM
+            </p>
+
+            <h6 class="fw-bold mt-4">
+                Major Stops
+            </h6>
+
+            <div class="d-flex flex-wrap gap-2">
+
+                <span class="badge bg-light text-dark">
+                    Patwadh Kautuk
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    Bilariya
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    College Road
+                </span>
+
+                <span class="badge bg-light text-dark">
+                    SSPI College
+                </span>
+
+            </div>
+
+            <button
+                class="btn btn-outline-primary w-100 mt-4"
+                onclick="showRoute('Route 04')">
+
+                <i class="bi bi-map"></i>
+                View Route
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= TRANSPORT INFORMATION ================= -->
+
+<section class="bg-light py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="text-center">
+
+                    <i class="bi bi-bus-front-fill text-primary"
+                       style="font-size:45px;">
+                    </i>
+
+                    <h5 class="fw-bold mt-3">
+                        15+ Buses
+                    </h5>
+
+                    <p class="text-secondary">
+                        Regular campus transportation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="text-center">
+
+                    <i class="bi bi-clock-fill text-success"
+                       style="font-size:45px;">
+                    </i>
+
+                    <h5 class="fw-bold mt-3">
+                        Fixed Timings
+                    </h5>
+
+                    <p class="text-secondary">
+                        Check departure and return timings.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="text-center">
+
+                    <i class="bi bi-shield-check text-danger"
+                       style="font-size:45px;">
+                    </i>
+
+                    <h5 class="fw-bold mt-3">
+                        Safe Travel
+                    </h5>
+
+                    <p class="text-secondary">
+                        Reliable transportation for students.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-dark text-white py-4">
+
+    <div class="container text-center">
+
+        <h5>
+            <i class="bi bi-mortarboard-fill"></i>
+            Smart Campus Hub
+        </h5>
+
+        <p class="text-secondary mb-0">
+            © 2026 Smart Campus Hub | College Project
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- Custom JS -->
+
+<script src="script.js"></script>
+
+
+<!-- Temporary Route Function -->
+
+<script>
+
+function showRoute(route) {
+
+    alert(
+        route +
+        " selected!\n\n" +
+        "Detailed route information will be displayed here."
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
